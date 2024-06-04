@@ -3,18 +3,44 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<header class="bg-[#fdecef] shadow px-8">
-		<div class="flex justify-between items-center h-35">
-			<div class="size-32">
-				<img src="image/logo.png">
+	<header class="bg-[#982437] shadow px-5 mt-10">	
+		<nav class="flex justify-between items-center h-18">
+			<div class="p-3 bg-[#892b3a] shadow-xl rounded-xl ">
+				<h1 class="text-white">Login</h1>
 			</div>
-			<div class="p-5 bg-orange-600">
-				<h1 class="text-white">prueba de elemento 1</h1>
-			</div>
-			<div class="p-5 bg-black">
-				<button><svg class=""></button>
-			</div>
-			
-		</div>	
+			<div class="absolute top-0 left-0 w-full h-32">
+                <img src="image/logo.png" class="h-full w-full object-contain">
+            </div>
+			<button class="text-slate-100 shadow-xl hover:text-slate-400 p-3">
+				<svg  
+				xmlns="http://www.w3.org/2000/svg"  
+				width="30"  height="30"  
+				viewBox="0 0 24 24"  
+				fill="none"  
+				stroke="currentColor"  
+				stroke-width="2"  
+				stroke-linecap="round"  
+				stroke-linejoin="round"  
+				class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
+					<path 
+					stroke="none" 
+					d="M0 0h24v24H0z" 
+					fill="none"/>
+					<path d="M4 6l16 0" />
+					<path d="M4 12l16 0" />
+					<path d="M4 18l16 0" />
+				</svg>
+			</button>
+		</>	
 	</header>
+	<body>
+		<div class="grid position: relative gap-y-6">
+			<img src="image/distrito.png">
+			<div class="text-slate-50 position: absolute bg-black 100"> HOLAAAAAAAA </div>
+			<img src="image/Murguen_train.png">
+		</div>
+		
+
+		
+	</body>
 </Layout>
