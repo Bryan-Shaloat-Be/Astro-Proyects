@@ -3,15 +3,16 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<header class="bg-[#982437] shadow px-5 mt-10 w-full">	
+<div class=" bg-cover bg-center bg-[url('image/distrito.png')]">
+	<header class="bg-[#982437] shadow px-5 mt-10 w-full ">	
 		<nav class="flex justify-between items-center h-18 w-full">
-			<div class="p-3 bg-[#892b3a] shadow-xl rounded-xl ">
+			<div class="p-3 bg-[#982437] shadow-xl">
 				<h1 class="text-white">Login</h1>
 			</div>
 			<div class="absolute top-0 left-0 w-full h-28 md:h-36"> <!-- Resposive part -->
 				<img src="image/logo.png" class="h-full w-full object-contain">
 			</div>
-			<button class="text-slate-100 shadow-xl hover:text-slate-400 p-3">
+			<button class="text-slate-100 shadow-xl hover:text-slate-400 p-2">
 				<svg  
 				xmlns="http://www.w3.org/2000/svg"  
 				width="30"  height="30"  
@@ -32,14 +33,43 @@ import Layout from '../layouts/Layout.astro';
 				</svg>
 			</button>
 		</nav>	
+		<div class=" flex flex-col w-full border-t mt-10 md:hidden">
+			<a href="localhost /elenco.astro" class="text-slate-50 p-2"> Inicio </a>
+			<a href="#" class="text-slate-50 p-2"> Elenco </a>
+		</div>
 	</header>
 	<div class="w-full pt-10 p-6 grid place-content-center md:pt-20">
-		<p class="bg-white w-full p-2 text-justify md:w-[512px]">
+		<p class=" bg-[#242422] text-slate-50 w-full p-3 text-justify md:w-[512px] shadow-[#982437] shadow-md">
+			También conocida bajo su nombre en inglés Demon Slayer, 
+			o en español Guardianes de la noche, 
+			es una serie de manga escrita e ilustrada por 
+			Koyoharu Gotōge, cuya publicación comenzó el 15 de febrero de 2016 en 
+			la revista semanal Shūkan Shōnen Jump de la editorial Shūeisha. 
+			Una adaptación a serie de anime producida por el estudio Ufotable 
+			fue estrenada el 6 de abril de 2019 y finalizó el 28 de septiembre 
+			de ese mismo año cuya primera temporada tiene 26 episodios
+		</p>
+	</div>
+	<div class="w-full pt-10 p-6 grid place-content-center md:pt-20 ">
+		<p class="bg-[#242422] text-slate-50 w-full p-3 text-justify md:w-[512px] shadow-[#982437] shadow-md">
+			La propiedad overflow controla cómo se comporta el contenido de un elemento 
+			cuando supera los límites de su caja. Para evitar que el texto se salga, 
+			puedes establecer el valor de overflow en hidden. 
+			Esto ocultará cualquier parte del texto que no quepa dentro de la caja.
+			<img src="image/ufotablelogo.png.jpg" class="w-full pt-6 sm:w-[400px]">
+		</p>
+	
+	</div>
+</div>
+<section class=" w- full bg-cover bg-center bg-[url('image/Murguen_train.png')]">
+	
+	<div class="w-full pt-10 p-6 grid place-content-center md:pt-20">
+		<p class="bg-[#242422] text-slate-50 w-full p-3 text-justify md:w-[512px] shadow-[#982437] shadow-md">
 			La propiedad overflow controla cómo se comporta el contenido de un elemento 
 			cuando supera los límites de su caja. Para evitar que el texto se salga, 
 			puedes establecer el valor de overflow en hidden. 
 			Esto ocultará cualquier parte del texto que no quepa dentro de la caja.
 		</p>
-			
 	</div>
+</section>
 </Layout>
