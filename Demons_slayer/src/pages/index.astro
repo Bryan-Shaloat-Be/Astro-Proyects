@@ -3,14 +3,14 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<header class="bg-[#982437] shadow px-5 mt-10">	
-		<nav class="flex justify-between items-center h-18">
+	<header class="bg-[#982437] shadow px-5 mt-10 w-full">	
+		<nav class="flex justify-between items-center h-18 w-full">
 			<div class="p-3 bg-[#892b3a] shadow-xl rounded-xl ">
 				<h1 class="text-white">Login</h1>
 			</div>
-			<div class="absolute top-0 left-0 w-full h-32">
-                <img src="image/logo.png" class="h-full w-full object-contain">
-            </div>
+			<div class="absolute top-0 left-0 w-full h-28 md:h-36"> <!-- Resposive part -->
+				<img src="image/logo.png" class="h-full w-full object-contain">
+			</div>
 			<button class="text-slate-100 shadow-xl hover:text-slate-400 p-3">
 				<svg  
 				xmlns="http://www.w3.org/2000/svg"  
@@ -31,16 +31,15 @@ import Layout from '../layouts/Layout.astro';
 					<path d="M4 18l16 0" />
 				</svg>
 			</button>
-		</>	
+		</nav>	
 	</header>
-	<body>
-		<div class="grid position: relative gap-y-6">
-			<img src="image/distrito.png">
-			<div class="text-slate-50 position: absolute bg-black 100"> HOLAAAAAAAA </div>
-			<img src="image/Murguen_train.png">
-		</div>
-		
-
-		
-	</body>
+	<div class="w-full pt-10 p-6 grid place-content-center md:pt-20">
+		<p class="bg-white w-full p-2 text-justify md:w-[512px]">
+			La propiedad overflow controla cómo se comporta el contenido de un elemento 
+			cuando supera los límites de su caja. Para evitar que el texto se salga, 
+			puedes establecer el valor de overflow en hidden. 
+			Esto ocultará cualquier parte del texto que no quepa dentro de la caja.
+		</p>
+			
+	</div>
 </Layout>
