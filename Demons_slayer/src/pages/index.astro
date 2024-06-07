@@ -34,12 +34,15 @@ import Layout from '../layouts/Layout.astro';
 			</button>
 		</nav>	
 		<div class=" flex flex-col w-full border-t mt-10 md:hidden">
-			<a href="/elenco" class="text-slate-50 p-2"> Inicio </a>
-			<a href="#" class="text-slate-50 p-2"> Elenco </a>
+			<a href="/index" class="text-slate-50 p-2"> Inicio </a>
+			<a href="/elenco" class="text-slate-50 p-2"> Elenco </a>
 		</div>
 	</header>
 	<div class="w-full pt-10 p-6 grid place-content-center md:pt-20">
-		<p class=" bg-[#242422] text-slate-50 w-full p-3 text-justify md:w-[512px] shadow-[#982437] shadow-md">
+		<div class="bg-[#242422] text-slate-50 w-full p-3 text-justify md:w-[512px] shadow-[#982437] shadow-md">
+			<h1 class="text-slate-50 w-full mb-3 text-xl p-1">
+				Kimetzu no yaiba (Demon Slayer)
+			</h1>
 			También conocida bajo su nombre en inglés Demon Slayer, 
 			o en español Guardianes de la noche, 
 			es una serie de manga escrita e ilustrada por 
@@ -48,33 +51,49 @@ import Layout from '../layouts/Layout.astro';
 			Una adaptación a serie de anime producida por el estudio Ufotable 
 			fue estrenada el 6 de abril de 2019 y finalizó el 28 de septiembre 
 			de ese mismo año cuya primera temporada tiene 26 episodios
-		</p>
+		</div>
 	</div>
 	<div class="w-full pt-10 p-6 grid place-content-center md:pt-20 ">
-		<p class="bg-[#242422] text-slate-50 w-full p-3 text-justify md:w-[512px] shadow-[#982437] shadow-md">
+		<div class="bg-[#242422] text-slate-50 w-full p-3 text-justify md:w-[512px] shadow-[#982437] shadow-md">
+			<h1 class="text-slate-50 w-full mb-3 text-xl p-1">
+				Creadora de animacion
+			</h1>
 			La propiedad overflow controla cómo se comporta el contenido de un elemento 
 			cuando supera los límites de su caja. Para evitar que el texto se salga, 
 			puedes establecer el valor de overflow en hidden. 
 			Esto ocultará cualquier parte del texto que no quepa dentro de la caja.
 			<img src="image/ufotablelogo.png.jpg" class="w-full pt-6 sm:w-[400px]">
-		</p>
+		</div>
 	</div>
 </div>
 
-<section class=" bg-cover bg-center bg-[url('image/Murguen_train.png')]">
-	<div class="w-full pt-10 p-6 grid place-content-center md:pt-20">
-		<p class="bg-[#242422] text-slate-50 w-full p-3 text-justify md:w-[512px] shadow-[#982437] shadow-md">
-			La propiedad overflow controla cómo se comporta el contenido de un elemento 
-			cuando supera los límites de su caja. Para evitar que el texto se salga, 
-			puedes establecer el valor de overflow en hidden. 
-			Esto ocultará cualquier parte del texto que no quepa dentro de la caja.
-		</p>
+<div class=" bg-cover bg-center bg-[url('image/Murguen_train.png')] w-full">
+	<div class="w-full pt-8 p-6 grid place-content-center md:pt-20">
+		<div class="bg-[#242422] text-slate-50 w-full p-3 text-justify md:w-[512px] shadow-[#982437] shadow-md">
+			<h1 class="text-slate-50 w-full mb-3 text-xl p-1">
+				Creadora del manga y otros
+			</h1>
+			Koyoharu Gotouge es el seudónimo que utiliza 
+			como autora e ilustradora anónima detrás de 
+			“Demon Slayer”. Gotouge solo ha publicado 
+			otros cuatro mangas hasta la fecha. Su one-shot debut, 
+			“Kagarigari”, recibió un premio Jump Treasure 
+			Newcomer Manga Award en 2013. Gotouge siguió a “Kagarigari” con 
+			“Monju Shirō Kyōdai” en Jump Next! Y “Rokkotsu-san” en Weekly Shōnen Jump.
+			<img src="image/Koyoharu-Gotouge.jpg" class="w-full pt-6 sm:w-[400px]">
+		</div>
 	</div>
-</section>
+</div>
 
 <footer class="bg-[#242422]">
-	<div class="m-10 grid gap-y-4 place-content-center">
-		<div class="grid grid-flow-col gap-x-4 items-center">
+	<div class="m-12">
+		<img src="image/Recurso 251.png" class="sm:w-[400px]">
+	</div>
+	<div class="border-t p-2 mr-10 ml-10 grid place-items-center">
+		<h1 class="text-slate-50 text-xl"> SIGUENOS </h1>
+	</div>
+	<div class="m-10 mt-4 grid gap-5 grid-cols-2">
+		<div class="grid grid-flow-col items-center">
 			<svg  xmlns="http://www.w3.org/2000/svg"  
 				width="24"  height="24"  
 				viewBox="0 0 24 24"  
@@ -88,10 +107,11 @@ import Layout from '../layouts/Layout.astro';
 				<path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
 			</svg>
 			<h1 class="text-slate-50">
-				faceb
-		</h1>
+				@Kotz_Team
+			</h1>
 		</div>
-		<div class="grid grid-flow-col gap-x-4  items-center">
+		
+		<div class="grid grid-flow-col items-center">
 			<svg  xmlns="http://www.w3.org/2000/svg"  
 				width="24"  height="24"  
 				viewBox="0 0 24 24"  
@@ -107,7 +127,45 @@ import Layout from '../layouts/Layout.astro';
 				<path d="M16.5 7.5l0 .01" />
 			</svg>
 			<h1 class="text-slate-50">
-					insta
+					@KkotzTeam
+			</h1>
+		</div>
+		<div class="grid grid-flow-col items-center">
+			<svg  xmlns="http://www.w3.org/2000/svg"  
+				width="24"  height="24"  
+				viewBox="0 0 24 24"  
+				fill="none"  
+				stroke="#ffffff"  
+				stroke-width="2"  
+				stroke-linecap="round"  
+				stroke-linejoin="round"  
+				class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+				<path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+				<path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+				<path d="M16.5 7.5l0 .01" />
+			</svg>
+			<h1 class="text-slate-50">
+					@KkotzTeam
+			</h1>
+		</div>
+		<div class="grid grid-flow-col items-center">
+			<svg  xmlns="http://www.w3.org/2000/svg"  
+				width="24"  height="24"  
+				viewBox="0 0 24 24"  
+				fill="none"  
+				stroke="#ffffff"  
+				stroke-width="2"  
+				stroke-linecap="round"  
+				stroke-linejoin="round"  
+				class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+				<path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+				<path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+				<path d="M16.5 7.5l0 .01" />
+			</svg>
+			<h1 class="text-slate-50">
+					@KkotzTeam
 			</h1>
 		</div>
 	</div>

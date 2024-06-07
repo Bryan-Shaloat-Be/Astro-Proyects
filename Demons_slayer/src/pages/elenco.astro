@@ -3,7 +3,47 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-
-    <div class="text-slate-50"> holaaaa bienvenido a ver a los pilar</div>
-
+    <div class=" bg-cover bg-center bg-[url('image/distrito.png')]">
+        <header class="bg-[#982437] shadow px-5 mt-10 w-full ">	
+            <nav class="flex justify-between items-center h-18 w-full">
+                <div class="p-3 bg-[#982437] shadow-xl">
+                    <h1 class="text-white">Login</h1>
+                </div>
+                <div class="absolute top-0 left-0 w-full h-28 md:h-36"> <!-- Resposive part -->
+                    <img src="image/logo.png" class="h-full w-full object-contain">
+                </div>
+                <button class="text-slate-100 shadow-xl hover:text-slate-400 p-2">
+                    <svg  
+                    xmlns="http://www.w3.org/2000/svg"  
+                    width="30"  height="30"  
+                    viewBox="0 0 24 24"  
+                    fill="none"  
+                    stroke="currentColor"  
+                    stroke-width="2"  
+                    stroke-linecap="round"  
+                    stroke-linejoin="round"  
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
+                        <path 
+                        stroke="none" 
+                        d="M0 0h24v24H0z" 
+                        fill="none"/>
+                        <path d="M4 6l16 0" />
+                        <path d="M4 12l16 0" />
+                        <path d="M4 18l16 0" />
+                    </svg>
+                </button>
+            </nav>	
+            <div class=" flex flex-col w-full border-t mt-10 md:hidden">
+                <a href="/index" class="text-slate-50 p-2"> Inicio </a>
+                <a href="/elenco" class="text-slate-50 p-2"> Elenco </a>
+            </div>
+        </header>
+        <div class="w-full pt-10 p-6 grid place-content-center md:pt-20">
+            <div class="bg-[#242422] text-slate-50 w-full p-3 text-justify md:w-[512px] shadow-[#982437] shadow-md">
+                <h1 class="text-slate-50 w-full mb-3 text-2xl p-1">
+                    Personajes pricipales de la serie
+                </h1>
+            </div>
+        </div>
+    </div>
 </Layout>
