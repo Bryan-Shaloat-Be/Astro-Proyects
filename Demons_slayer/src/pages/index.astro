@@ -34,7 +34,7 @@ import Layout from '../layouts/Layout.astro';
 			</button>
 		</nav>	
 		<div class=" flex flex-col w-full border-t mt-10 md:hidden">
-			<a href="localhost /elenco.astro" class="text-slate-50 p-2"> Inicio </a>
+			<a href="/elenco" class="text-slate-50 p-2"> Inicio </a>
 			<a href="#" class="text-slate-50 p-2"> Elenco </a>
 		</div>
 	</header>
@@ -58,11 +58,10 @@ import Layout from '../layouts/Layout.astro';
 			Esto ocultará cualquier parte del texto que no quepa dentro de la caja.
 			<img src="image/ufotablelogo.png.jpg" class="w-full pt-6 sm:w-[400px]">
 		</p>
-	
 	</div>
 </div>
-<section class=" w- full bg-cover bg-center bg-[url('image/Murguen_train.png')]">
-	
+
+<section class=" bg-cover bg-center bg-[url('image/Murguen_train.png')]">
 	<div class="w-full pt-10 p-6 grid place-content-center md:pt-20">
 		<p class="bg-[#242422] text-slate-50 w-full p-3 text-justify md:w-[512px] shadow-[#982437] shadow-md">
 			La propiedad overflow controla cómo se comporta el contenido de un elemento 
@@ -72,4 +71,45 @@ import Layout from '../layouts/Layout.astro';
 		</p>
 	</div>
 </section>
+
+<footer class="bg-[#242422]">
+	<div class="m-10 grid gap-y-4 place-content-center">
+		<div class="grid grid-flow-col gap-x-4 items-center">
+			<svg  xmlns="http://www.w3.org/2000/svg"  
+				width="24"  height="24"  
+				viewBox="0 0 24 24"  
+				fill="none"  
+				stroke="#ffffff"  
+				stroke-width="2"  
+				stroke-linecap="round"  
+				stroke-linejoin="round"  
+				class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+				<path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+			</svg>
+			<h1 class="text-slate-50">
+				faceb
+		</h1>
+		</div>
+		<div class="grid grid-flow-col gap-x-4  items-center">
+			<svg  xmlns="http://www.w3.org/2000/svg"  
+				width="24"  height="24"  
+				viewBox="0 0 24 24"  
+				fill="none"  
+				stroke="#ffffff"  
+				stroke-width="2"  
+				stroke-linecap="round"  
+				stroke-linejoin="round"  
+				class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+				<path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+				<path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+				<path d="M16.5 7.5l0 .01" />
+			</svg>
+			<h1 class="text-slate-50">
+					insta
+			</h1>
+		</div>
+	</div>
+</footer>
 </Layout>
